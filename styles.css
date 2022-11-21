@@ -23,39 +23,89 @@ main {
 
 section {
     margin: 25px;
+    padding: 15px;
     border-color: rgb(17, 91, 66);
     border-style: solid;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
-section ul {
+.bookmark-icon {
+    position: absolute;
+    right: 8px;
+    top: -22px;
+    background-color: transparent;
+    border-color: transparent;
+}
+.bookmark-icon img {
+    background-color: white;
+}
+section > input {
+    padding: 5px 8px;
+    background-color: rgb(236, 244, 241);
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px rgb(17, 91, 66);
+}
+/*
+section > input:hover {
+    box-shadow: 2px 3px 4px rgb(17, 91, 66);
+}
+*/
+section form {
     width: 100%;
     display: flex;
     gap: 5px;
-    padding-left: 15px;
+    padding: 20px 0px 10px 0px;
 }
-section ul li {
-    list-style: none;
+section form label {
     border-color: rgb(17, 91, 66);
     border-style: solid;
-    border-radius: 5px;
+    padding: 5px 7px 5px 2px;
+    border-radius: 8px;
     border-width: 1px;
-    padding: 4px;
 }
 
 footer {
-    background-color: rgb(120, 228, 192);
+    background-color: rgb(192, 228, 216);
     width: 100%;
     position: fixed;
     bottom: 0;
     z-index: 10;
+    border-bottom:  solid rgb(17, 91, 66) 2px;
 }
-footer figure {
+/*
+footer ul {
+    list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 footer figure img {
-    size: 9%;
+    width: 80%;
+}
+*/
+.nav__footer {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__footer--home {
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(120, 228, 192);
+    border: solid rgb(17, 91, 66) 2px;
+    border-top:  solid rgb(17, 91, 66) 4px;
+    border-right: solid rgb(17, 91, 66) 4px;
+}
+.nav__footer--item {
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px;
+    /*border: solid rgb(17, 91, 66) 2px;*/
+    background-color: rgb(191, 217, 208);
 }
