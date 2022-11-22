@@ -93,19 +93,54 @@ footer figure img {
     padding: 0;
 }
 
-.nav__footer--home {
+.nav__footer--highlight {
     flex-grow: 1;
     text-align: center;
     padding: 10px;
     background-color: rgb(120, 228, 192);
-    border: solid rgb(17, 91, 66) 2px;
-    border-top:  solid rgb(17, 91, 66) 4px;
-    border-right: solid rgb(17, 91, 66) 4px;
+    border: solid rgb(17, 91, 66) 4px;
 }
 .nav__footer--item {
     flex-grow: 1;
     text-align: center;
     padding: 10px;
-    /*border: solid rgb(17, 91, 66) 2px;*/
     background-color: rgb(191, 217, 208);
+    border: solid rgb(191, 217, 208);
+}
+
+
+/* ################################################## */
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    border-style: none;
+}
+.profile img {
+    border-radius: 50%;
+    width: 30%;
+}
+.about {
+    align-items: flex-start;
+    border-style: none;
+}
+.counter {
+    border-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+.counter div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: ;
+    gap: 10px;
+}
+.counter div img {
+    width: 30%;
+    height: 30%;
 }
