@@ -9,3 +9,11 @@ buttonToggle.addEventListener("click", () => {
     questionsSymbolElement.classList.toggle("counter__questions--symbol--dark");
     //imgElement.src = "./icons/icon-bookmark.png";
 });
+
+
+
+const bookmark1Element = document.querySelector('[data-js="bookmark1"]');
+const bookmarkButton1 = document.querySelector('[data-js="bookmark__button1"]');
+bookmarkButton1.addEventListener("click", () => {
+    bookmark1Element.src = "./icons/icon-bookmark-filled.png";
+});
