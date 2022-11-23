@@ -3,6 +3,7 @@
 }
 body {
     margin: 0;
+    font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,;
 }
 
 header {
@@ -131,16 +132,45 @@ footer figure img {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 20px;
+    gap: 50px;
+}
+.counter p {
+    font-size: 120%;
 }
 .counter div {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: ;
+    align-items: center;
     gap: 10px;
 }
+.counter__questions--symbol {
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    padding: 3px 7px;
+}
 .counter div img {
-    width: 30%;
-    height: 30%;
+    width: 45%;
+    height: 45%;
+}
+.settings {
+    align-items: flex-start;
+    border-style: none;
+}
+.settings__switch {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* ############################## Dark Modus */
+
+body.darkModus {
+    background-color: rgb(50, 51, 58);
+    color: white;
+}
+.counter__questions--symbol--dark {
+    background-color: white;
+    color: black;
 }

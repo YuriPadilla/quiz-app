@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz App - Bookmark</title>
     <link rel="stylesheet" href="./styles.css">
+    <script src="./index.js" defer></script>
 </head>
-<body>
+<body data-js="body--dark">
     <header>
         <h1>Quiz App</h1>
     </header>
@@ -21,13 +22,20 @@
             <p>When done, use the feature branch workflow to merge your results into the main branch.</p>
         </section>
         <section class="counter">
-            <div>
-                <img src="" alt="">
-                <p></p>
+            <div class="counter__questions">
+                <p class="counter__questions--symbol" data-js="questions--symbol--dark">?!</p>
+                <p>7</p>
             </div>
-            <div>
-                <img src="./icons/icon-bookmark-filled.png" alt="Bookmark Filled">
+            <div class="counter__bookmarks">
+                <img src="./icons/icon-bookmark-filled.png" alt="Bookmark Filled" data-js="bookmark--darkmodus">
                 <p>6</p>
+            </div>
+        </section>
+        <section class="settings">
+            <h2>Settings</h2>
+            <div class="settings__switch">
+                <p>Dark Mode</p>
+                <button data-js="button--toggle">Toggle</button>
             </div>
         </section>
     </main>
