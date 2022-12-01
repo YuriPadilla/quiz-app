@@ -1,0 +1,10 @@
+header {
+    background-color: rgb(120, 228, 192);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+header h1 {
+    text-align: center;
+}

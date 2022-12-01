@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Quiz App - Home</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/add.js" defer></script>
+</head>
+<body data-js="body--dark">
+    <header>
+        <h1>Quiz App</h1>
+    </header>
+    <main>
+        <form action="" class="addForm" data-js="add-form">
+
+            <label for="inputQuestion">Your question</label>
+            <textarea 
+                name="inputQuestion"
+                id="inputQuestion" 
+                cols="30" 
+                rows="5"
+                placeholder="Write the question here."
+            ></textarea>
+
+            <label for="inputAnswer">Your answer</label>
+            <textarea 
+                name="inputAnswer"
+                id="inputAnswer"
+                cols="30" 
+                rows="5"
+                placeholder="Write the answer here."
+            ></textarea>
+
+            <label for="inputTag">Tag</label>
+            <input type="text"  id="inputTag" name="inputTag">
+
+            <button type="submit">Submit</button>
+            
+        </form>
+    </main>
+    <footer>
+        <ul class="nav__footer">
+            <li class="nav__footer--item">
+                <a href="./index.html"><img src="./icons/icon-home.png" alt="icon-home"/></a>
+            </li>
+            <li class="nav__footer--item">
+                <a href="./bookmarks.html"><img src="./icons/icon-bookmark.png" alt="icon-bookmark"/></a>
+            </li>
+            <li class="nav__footer--highlight">
+                <a href=""><img src="./icons/icon-add-filled.png" alt="icon-add"/></a>
+            </li>
+            <li class="nav__footer--item">
+                <a href="./profile.html"><img src="./icons/icon-user.png" alt="icon-account"/></a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

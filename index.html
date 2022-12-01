@@ -1,127 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">q
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Quiz App - Home</title>
-    <link rel="stylesheet" href="./styles.css">
-    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/index.js" defer></script>
 </head>
 <body data-js="body--dark">
     <header>
         <h1>Quiz App</h1>
     </header>
     <main>
-        <section class="Question1">
+        <section class="card">
             <button class="bookmark-icon" data-js="bookmark__button1">
                 <img src="./icons/icon-bookmark.png" alt="bookmark" data-js="bookmark1">
             </button>
             <h2>What property flips the axes in Flexbox?</h2>
-            <input type="button" value="Show Answer">
-            <form action="">
-                <label for="html">
-                    <input type="radio" id="html" name="answer" value="html">#html
-                </label>
-                <label for="flexbox">
-                    <input type="radio" id="flexbox" name="answer" value="flexbox">#flexbox
-                </label>
-                <label for="css">
-                    <input type="radio" id="css" name="answer" value="css">#css
-                </label>
+            
+            <form action=""  class="card__answers">
+                <div>
+                    <label for="html">
+                        <input type="radio" id="html" name="answer" value="html">#html
+                    </label>
+                    <label for="flexbox">
+                        <input type="radio" id="flexbox" name="answer" value="flexbox">#flexbox
+                    </label>
+                    <label for="css">
+                        <input type="radio" id="css" name="answer" value="css">#css
+                    </label>
+                </div>
+                <button type="submit" class="button">Send</button>
             </form>
+            <button class="button" data-js="button-anwer1">Show Answer</button>
+            <div class="output">
+                <output data-js="showed-answer1"></output>
+            </div>
         </section>
-        <section>
+
+        <section class="card">
             <button class="bookmark-icon" data-js="bookmark__button2">
-                <img src="/icons/icon-bookmark.png" alt="bookmark" data-js="bookmark2">
+                <img src="./icons/icon-bookmark.png" alt="bookmark" data-js="bookmark2">
             </button>
-            <h2>Lorem Impsum dolor sit?</h2>
-            <input type="button" value="Show Answer">
-            <form action="">
-                <label for="html">
-                    <input type="radio" id="html" name="answer" value="html">#html
-                </label>
-                <label for="flexbox">
-                    <input type="radio" id="flexbox" name="answer" value="flexbox">#flexbox
-                </label>
-                <label for="css">
-                    <input type="radio" id="css" name="answer" value="css">#css
-                </label>
+            <h2>What property flips the axes in Flexbox?</h2>
+            <form action=""  class="card__answers">
+                <div>
+                    <label for="html">
+                        <input type="radio" id="html" name="answer" value="html">#html
+                    </label>
+                    <label for="flexbox">
+                        <input type="radio" id="flexbox" name="answer" value="flexbox">#flexbox
+                    </label>
+                    <label for="css">
+                        <input type="radio" id="css" name="answer" value="css">#css
+                    </label>
+                </div>
+                <button type="submit" class="button">Send</button>
             </form>
+            <button class="button" data-js="button-anwer2">Show Answer</button>
+            <div class="output">
+                <output data-js="showed-answer2"></output>
+            </div>
         </section>
-        <section>
+
+        <section class="card">
             <button class="bookmark-icon" data-js="bookmark__button3">
-                <img src="/icons/icon-bookmark.png" alt="bookmark" data-js="bookmark3">
+                <img src="./icons/icon-bookmark.png" alt="bookmark" data-js="bookmark3">
             </button>
-            <h2>Lorem Impsum dolor sit?</h2>
-            <input type="button" value="Show Answer">
-            <form action="">
-                <label for="html">
-                    <input type="radio" id="html" name="answer" value="html">#html
-                </label>
-                <label for="flexbox">
-                    <input type="radio" id="flexbox" name="answer" value="flexbox">#flexbox
-                </label>
-                <label for="css">
-                    <input type="radio" id="css" name="answer" value="css">#css
-                </label>
+            <h2>What property flips the axes in Flexbox?</h2>
+            <form action=""  class="card__answers">
+                <div>
+                    <label for="html">
+                        <input type="radio" id="html" name="answer" value="html">#html
+                    </label>
+                    <label for="flexbox">
+                        <input type="radio" id="flexbox" name="answer" value="flexbox">#flexbox
+                    </label>
+                    <label for="css">
+                        <input type="radio" id="css" name="answer" value="css">#css
+                    </label>
+                </div>
+                <button type="submit" class="button">Send</button>
             </form>
+            <button class="button" data-js="button-anwer3">Show Answer</button>
+            <div class="output">
+                <output data-js="showed-answer3"></output>
+            </div>
         </section>
-        <section>
-            <button class="bookmark-icon" data-js="bookmark__button4">
-                <img src="/icons/icon-bookmark.png" alt="bookmark" data-js="bookmark4">
-            </button>
-            <h2>Lorem Impsum dolor sit?</h2>
-            <input type="button" value="Show Answer">
-            <form action="">
-                <label for="html">
-                    <input type="radio" id="html" name="answer" value="html">#html
-                </label>
-                <label for="flexbox">
-                    <input type="radio" id="flexbox" name="answer" value="flexbox">#flexbox
-                </label>
-                <label for="css">
-                    <input type="radio" id="css" name="answer" value="css">#css
-                </label>
-            </form>
-        </section>
-        <section>
-            <button class="bookmark-icon" data-js="bookmark__button5">
-                <img src="/icons/icon-bookmark.png" alt="bookmark" data-js="bookmark5">
-            </button>
-            <h2>Lorem Impsum dolor sit?</h2>
-            <input type="button" value="Show Answer">
-            <form action="">
-                <label for="html">
-                    <input type="radio" id="html" name="answer" value="html">#html
-                </label>
-                <label for="flexbox">
-                    <input type="radio" id="flexbox" name="answer" value="flexbox">#flexbox
-                </label>
-                <label for="css">
-                    <input type="radio" id="css" name="answer" value="css">#css
-                </label>
-            </form>
-        </section>
-        <section>
-            <button class="bookmark-icon" data-js="bookmark__button6">
-                <img src="/icons/icon-bookmark.png" alt="bookmark" data-js="bookmark6">
-            </button>
-            <h2>Lorem Impsum dolor sit?</h2>
-            <input type="button" value="Show Answer">
-            <form action="">
-                <label for="html">
-                    <input type="radio" id="html" name="answer" value="html">#html
-                </label>
-                <label for="flexbox">
-                    <input type="radio" id="flexbox" name="answer" value="flexbox">#flexbox
-                </label>
-                <label for="css">
-                    <input type="radio" id="css" name="answer" value="css">#css
-                </label>
-            </form>
-        </section>
+
     </main>
+
     <footer>
         <ul class="nav__footer">
             <li class="nav__footer--highlight">
@@ -129,6 +98,9 @@
             </li>
             <li class="nav__footer--item">
                 <a href="./bookmarks.html"><img src="./icons/icon-bookmark.png" alt="icon-bookmark"/></a>
+            </li>
+            <li class="nav__footer--item">
+                <a href="./add.html"><img src="./icons/icon-add.png" alt="icon-add"/></a>
             </li>
             <li class="nav__footer--item">
                 <a href="./profile.html"><img src="./icons/icon-user.png" alt="icon-account"/></a>

@@ -1,0 +1,10 @@
+.addForm {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.addForm button {
+    align-self: flex-start;
+}

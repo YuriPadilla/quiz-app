@@ -10,6 +10,21 @@ bookmarkButton1.addEventListener("click", () => {
     }
 });
 
+const buttonShowHide1 = document.querySelector('[data-js="button-anwer1"]');
+const showedAnswer1 = document.querySelector('[data-js="showed-answer1"]');
+buttonShowHide1.addEventListener("click", () => {
+    if (buttonShowHide1.textContent === "Show Answer") {
+        buttonShowHide1.textContent = "Hide Answer";
+        showedAnswer1.textContent = "The Property is 'html'";
+    } else if (buttonShowHide1.textContent === "Hide Answer") {
+        buttonShowHide1.textContent = "Show Answer";
+        showedAnswer1.textContent = "";
+    }
+    
+});
+
+/*++++++++++++++++++++*/
+
 const bookmark2Element = document.querySelector('[data-js="bookmark2"]');
 const bookmarkButton2 = document.querySelector('[data-js="bookmark__button2"]');
 bookmarkButton2.addEventListener("click", () => {
@@ -21,6 +36,21 @@ bookmarkButton2.addEventListener("click", () => {
         bookmark2Element.classList.toggle("marked");
     }
 });
+
+const buttonShowHide2 = document.querySelector('[data-js="button-anwer2"]');
+const showedAnswer2 = document.querySelector('[data-js="showed-answer2"]');
+buttonShowHide2.addEventListener("click", () => {
+    if (buttonShowHide2.textContent === "Show Answer") {
+        buttonShowHide2.textContent = "Hide Answer";
+        showedAnswer2.textContent = "The Property is 'html'";
+    } else if (buttonShowHide2.textContent === "Hide Answer") {
+        buttonShowHide2.textContent = "Show Answer";
+        showedAnswer2.textContent = "";
+    }
+    
+});
+
+/*++++++++++++++++++++*/
 
 const bookmark3Element = document.querySelector('[data-js="bookmark3"]');
 const bookmarkButton3 = document.querySelector('[data-js="bookmark__button3"]');
@@ -34,38 +64,17 @@ bookmarkButton3.addEventListener("click", () => {
     }
 });
 
-const bookmark4Element = document.querySelector('[data-js="bookmark4"]');
-const bookmarkButton4 = document.querySelector('[data-js="bookmark__button4"]');
-bookmarkButton4.addEventListener("click", () => {
-    if(bookmark4Element.classList.contains("marked")) {
-        bookmark4Element.src = "./icons/icon-bookmark.png";
-        bookmark4Element.classList.toggle("marked");
-    } else {
-        bookmark4Element.src = "./icons/icon-bookmark-filled.png";
-        bookmark4Element.classList.toggle("marked");
+const buttonShowHide3 = document.querySelector('[data-js="button-anwer3"]');
+const showedAnswer3 = document.querySelector('[data-js="showed-answer3"]');
+buttonShowHide3.addEventListener("click", () => {
+    if (buttonShowHide3.textContent === "Show Answer") {
+        buttonShowHide3.textContent = "Hide Answer";
+        showedAnswer3.textContent = "The Property is 'html'";
+    } else if (buttonShowHide3.textContent === "Hide Answer") {
+        buttonShowHide3.textContent = "Show Answer";
+        showedAnswer3.textContent = "";
     }
+    
 });
 
-const bookmark5Element = document.querySelector('[data-js="bookmark5"]');
-const bookmarkButton5 = document.querySelector('[data-js="bookmark__button5"]');
-bookmarkButton5.addEventListener("click", () => {
-    if(bookmark5Element.classList.contains("marked")) {
-        bookmark5Element.src = "./icons/icon-bookmark.png";
-        bookmark5Element.classList.toggle("marked");
-    } else {
-        bookmark5Element.src = "./icons/icon-bookmark-filled.png";
-        bookmark5Element.classList.toggle("marked");
-    }
-});
-
-const bookmark6Element = document.querySelector('[data-js="bookmark6"]');
-const bookmarkButton6 = document.querySelector('[data-js="bookmark__button6"]');
-bookmarkButton6.addEventListener("click", () => {
-    if(bookmark6Element.classList.contains("marked")) {
-        bookmark6Element.src = "./icons/icon-bookmark.png";
-        bookmark6Element.classList.toggle("marked");
-    } else {
-        bookmark6Element.src = "./icons/icon-bookmark-filled.png";
-        bookmark6Element.classList.toggle("marked");
-    }
-});
+/*++++++++++++++++++++*/
