@@ -1,7 +1,11 @@
-* {
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+
 body {
     margin: 0;
-    font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,;
+    font-family: system-ui;
+    /*min-height: 100vh;*/
 }

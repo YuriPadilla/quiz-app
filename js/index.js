@@ -1,3 +1,49 @@
+const cards = [
+    {
+        question: "What property flips the axes in Flexbox?", 
+        tags: ["#html", "#flexbox", "#css"], 
+        answer: "The Property is 'html'",
+        isBookmarked: false,
+        showAnswer: false,
+    },
+    {
+        question: "What property flips the axes in Flexbox?", 
+        tags: ["#html", "#flexbox", "#css"], 
+        answer: "The Property is 'html'",
+        isBookmarked: false,
+        showAnswer: false,
+    },
+    {
+        question: "What property flips the axes in Flexbox?", 
+        tags: ["#html", "#flexbox", "#css"], 
+        answer: "The Property is 'html'",
+        isBookmarked: false,
+        showAnswer: false,
+    },
+];
+
+cards.forEach((card) => {
+    document.body.innerHTML += `
+        <section class="card">
+            <img class="bookmark-icon" src="./icons/icon-bookmark.svg" alt="bookmark" data-js="bookmark1" />
+
+            <h2>${card.question}</h2>
+
+            <ul class="tag-list">
+                ${card.tags.map((tag) => {
+                    return `<li class="tag-list__item">${tag}</li>`;
+                }).join("")}
+            </ul>
+            
+            <button class="button" data-js="button-answer1">${card.showAnswer === false ? "Show Answer" : "Hide Answer"}</button>
+
+            <div class="output">
+                <output data-js="showed-answer1"></output>
+            </div>
+        </section>
+    `;
+});
+
 const bookmark1Element = document.querySelector('[data-js="bookmark1"]');
 const bookmarkButton1 = document.querySelector('[data-js="bookmark__button1"]');
 bookmarkButton1.addEventListener("click", () => {
